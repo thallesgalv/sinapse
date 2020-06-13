@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
+    <!--Normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/internas.css">
+    <!--Google Fonts: Montserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!--JQuerry-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Font Awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <!--AOS-->
+    <link rel="stylesheet" href="js/aos-master/dist/aos.css"/>
+    <!--Particle Ground-->
+    <script src="./js/particles/jquery.particleground.min.js"></script>
+
+    <title>Contato | Sinapse: Agência Digital</title>
+</head>
+<body>
+    <div class="container-bg" data-aos="fade-left" data-aos-duration="1000">
+        <div class="pontos" id="particles"></div>
+        <img src="./img/is-contato.png" alt="Desenho mostra um homem sentado no chão e seu notebook conectado a um cérebro. Atrás dele é possível ver três torres de servidor." class="img-contato">
+    </div>
+    <header>
+        <nav>
+            <a href="index.html"><img src="./img/logo.png" alt="Logo Sinapse"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="cases.html">Cases</a></li>
+            </ul>
+            <div class="hamburguer"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+    <main class="main-onepage"> 
+        <h1 class="tag">Contato</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="5000">Pronto pra ligar os pontos?</h1>
+        <form data-aos="zoom-in" data-aos-duration="5000" id="formulario" method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe.php">
+            <p>
+                <label>
+                    Nome<br> <input type="text" required placeholder="Digite seu nome" name="nome" id="nome" size="35"
+                        maxlength="30" autofocus>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Telefone<br><input type="tel" required placeholder="Digite seu telefone" name="tel" id="telefone">
+                </label>
+            </p>
+            <p>
+                <label>
+                    E-mail<br><input type="email" required placeholder="Digite seu e-mail" name="email" id="email"
+                        size="35">
+                </label>
+            </p>
+            <p>
+                <label>
+                Mensagem<br> <textarea name="mensagem" required placeholder="Digite aqui sua mensagem" id="mensagem" rows="5" cols="50"></textarea>
+                </label>
+            </p>
+            <p class="alinha"><input id="enviarform" type="submit" value="Enviar"></p>
+
+        </form>
+    </main>
+    <footer>
+        <p class="slogan">#ligueospontos</p>
+        <p class="redes-sociais">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5513997774462&text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Sinapse!" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </p>
+        <small>Site desenvolvido pelos alunos Felipe Gameiro e Thalles Galvão</small>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="js/aos-master/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
