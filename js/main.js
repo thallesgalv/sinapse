@@ -35,12 +35,11 @@ $(document).ready(function() {
     });
 
     /*--------------------------------------------------------------Manipulação de classes---------------------------------------------------------------*/
+      
+function toggleMenu() {
+    document.querySelector('nav').classList.toggle('nav-ativo');
+    document.querySelector('.fa-bars').classList.toggle('fa-times');
+    document.querySelector('body').classList.toggle('menu-block-scroll');
+}
 
-    $(document).ready(function(){
-        $('.hamburguer').click(function(){
-            $('nav').toggleClass('nav-ativo');
-            $('.fa-bars').toggleClass('fa-times');
-            $('body').toggleClass('menu-block-scroll');
-        })
-      });
-
+document.querySelector('.hamburguer').addEventListener ('click', toggleMenu)
