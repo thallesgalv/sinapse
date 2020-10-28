@@ -42,7 +42,6 @@ body {
             right: 16%;
             bottom: 15%;
         }
-
     }
 
     >header {
@@ -63,7 +62,6 @@ body {
             @media (max-width: 767px) {
                 display: none;
             }
-            
         }
 
         >nav {
@@ -126,9 +124,7 @@ body {
             @media (max-width: 767px) {
                 color: #564D9E;
                 text-align: left;
-            }
-
-            
+            }      
         }
 
         .alinha {
@@ -290,8 +286,6 @@ body {
                         }
                     }
                 }
-
-
             }
         }
 
@@ -326,7 +320,6 @@ body {
                 @media (max-width: 767px) {
                     flex-basis: 42%;
                 }
-
 
                 &:nth-child(odd) {
                     background-color:rgba(86,77,158,.9);
@@ -387,6 +380,5 @@ body {
         @media (max-width: 767px) {
             background-color: #564D9E;
         }
-
     }
 }

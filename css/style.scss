@@ -79,6 +79,7 @@ body {
             
             >ul {
                 width: 100%;
+                height: 100%;
                 display: flex;
                 justify-content: flex-end;
 
@@ -90,15 +91,6 @@ body {
                     width: 12%;
                     text-align: center;
                     padding-right: 3%;
-
-                    &:hover {
-                        animation: menu-hover 0.9s both;
-                        @keyframes menu-hover{0%{transform:translateY(-25px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-15px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
-
-                        @media (max-width: 767px) {
-                            animation: none;
-                        }
-                    }
 
                     &:nth-child(n + 3) {
 
@@ -114,6 +106,7 @@ body {
                     >a {
                         width: 100%;
                         color: #564D9E;
+                        padding: 30px;
 
                         @media (max-width: 767px) {
                             color: #fff;
@@ -145,8 +138,6 @@ body {
                 @media (max-width: 767px) {
                     display: block;
                     width: 40%;
-
-
                 }
             }
 
@@ -167,8 +158,6 @@ body {
         >.nav-ativo {
             background-color: rgb(70, 62, 124);
 
-
-
             >.logo-branco {
                 display: none;
             }
@@ -179,9 +168,6 @@ body {
                 background-color: rgb(70, 62, 124);
                 padding-top: 60px;
 
-
-
-
                 >li {
                     width: 80%;
                     text-align: right;
@@ -191,11 +177,8 @@ body {
                     > a {
                         padding: 10px;
                     }
-
                 }
-
             }
-
         }
     }
 
@@ -291,7 +274,6 @@ body {
             justify-content: center;
             align-items: center;
         }
-
     }
 
     >footer {
