@@ -44,7 +44,8 @@
     <main class="main-onepage"> 
         <h1 class="tag">Contato</h1>
         <h1 data-aos="zoom-in" data-aos-duration="5000">Pronto pra ligar os pontos?</h1>
-        <form data-aos="zoom-in" data-aos-duration="5000" id="formulario" method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe.php">
+        <form data-aos="zoom-in" data-aos-duration="5000" id="formulario">
+            <!--<form data-aos="zoom-in" data-aos-duration="5000" id="formulario" method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe.php" class="aos-init aos-animate">-->
             <p>
                 <label>
                     Nome<br> <input type="text" required placeholder="Digite seu nome" name="nome" id="nome" size="35"
@@ -67,8 +68,8 @@
                 Mensagem<br> <textarea name="mensagem" required placeholder="Digite aqui sua mensagem" id="mensagem" rows="5" cols="50"></textarea>
                 </label>
             </p>
-            <p class="alinha"><input id="enviarform" type="submit" value="Enviar"></p>
-
+            <div id="enviarform" onclick="validacao()">Enviar</div>
+            <!--<input id="enviarform" type="submit" value="Enviar">-->
         </form>
     </main>
     <footer>

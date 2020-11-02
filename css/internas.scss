@@ -170,7 +170,6 @@ body {
         >form {
             background-color: #564D9E;
             padding: 4%;
-            padding-bottom: 0;
             border-radius: 30px;
             width: 60%;
             z-index: 2;
@@ -241,7 +240,7 @@ body {
             }
 
 
-            input[type="submit"] {
+           #enviarform {
                 background-color: #fff;
                 color: #564D9E;
                 height: 50px;
@@ -252,40 +251,44 @@ body {
                 cursor: pointer;
                 font-size: 1.4rem;
                 margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
 
-                &:hover {
-                    animation: botao .9s both;
+                // &:hover {
+                //     animation: botao .9s both;
 
-                    @keyframes botao {
-                        0% {
-                            transform: scale3d(1, 1, 1)
-                        }
+                //     @keyframes botao {
+                //         0% {
+                //             transform: scale3d(1, 1, 1)
+                //         }
 
-                        30% {
-                            transform: scale3d(1.25, .75, 1)
-                        }
+                //         30% {
+                //             transform: scale3d(1.25, .75, 1)
+                //         }
 
-                        40% {
-                            transform: scale3d(.75, 1.25, 1)
-                        }
+                //         40% {
+                //             transform: scale3d(.75, 1.25, 1)
+                //         }
 
-                        50% {
-                            transform: scale3d(1.15, .85, 1)
-                        }
+                //         50% {
+                //             transform: scale3d(1.15, .85, 1)
+                //         }
 
-                        65% {
-                            transform: scale3d(.95, 1.05, 1)
-                        }
+                //         65% {
+                //             transform: scale3d(.95, 1.05, 1)
+                //         }
 
-                        75% {
-                            transform: scale3d(1.05, .95, 1)
-                        }
+                //         75% {
+                //             transform: scale3d(1.05, .95, 1)
+                //         }
 
-                        100% {
-                            transform: scale3d(1, 1, 1)
-                        }
-                    }
-                }
+                //         100% {
+                //             transform: scale3d(1, 1, 1)
+                //         }
+                //     }
+                // }
             }
         }
 
