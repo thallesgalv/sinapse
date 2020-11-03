@@ -49,34 +49,36 @@
             <p>
                 <label>
                     Nome<br>
-                    <span id="erroNome"></span>
+
                     <input type="text" required placeholder="Digite seu nome" name="nome" id="nome" size="35"
                         maxlength="30" autofocus>
+                    <span id="erroNome"></span>
                 </label>
             </p>
             <p>
                 <label>
                     Telefone<br>
-                    <span id="erroTel"></span>
                     <input type="tel" required placeholder="Digite seu telefone" name="tel" id="telefone">
+                    <span id="erroTel"></span>
                 </label>
             </p>
             <p>
                 <label>
                     E-mail<br>
-                    <span id="erroEmail"></span>
                     <input type="email" required placeholder="Digite seu e-mail" name="email" id="email"
                         size="35">
+                    <span id="erroEmail"></span>
                 </label>
             </p>
             <p>
                 <label>
-                Mensagem<br>
-                <span id="erroMensagem"></span>
+                Mensagem<br>               
                 <textarea name="mensagem" required placeholder="Digite aqui sua mensagem" id="mensagem" rows="5" cols="50"></textarea>
+                <span id="erroMensagem"></span>
                 </label>
             </p>
             <div id="enviarform" onclick="validacao()">Enviar</div>
+            <div class="sucesso">enviado com sucesso!✔️</div>
             <!--<input id="enviarform" type="submit" value="Enviar">-->
         </form>
     </main>

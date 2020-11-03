@@ -174,6 +174,7 @@ body {
           width: 60%;
           z-index: 2;
           position: relative;
+          margin-bottom: 30px;
 
           @media (max-width: 767px) {
               position: unset;
@@ -222,6 +223,12 @@ body {
 
                   }
 
+                  >input.erro,
+                  textarea.erro {
+                    border: 5px solid red;
+                    background-color: #FFC0B5;
+                  }
+
                   >textarea {
                       width: 100%;
                       height: 68px;
@@ -240,14 +247,13 @@ body {
                   >span {
                     display: block;
                     color: #FFC0B5;
-                    font-size: style;
-                    font-size: .8rem;
+                    font-size: .9rem;
+                    padding-top: 8px;
                   }
               }
           }
 
-
-         #enviarform {
+        #enviarform {
               background-color: #fff;
               color: #564D9E;
               height: 50px;
@@ -296,7 +302,19 @@ body {
               //         }
               //     }
               // }
-          }
+        }
+
+        .sucesso {
+            display: none;
+            color: #9fc693;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .sucesso.ativo {
+            display: block;
+        }
       }
 
       >.container {
