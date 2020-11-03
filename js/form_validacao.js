@@ -1,45 +1,78 @@
 function validacao() {
+  const input = document.querySelectorAll('input');
+  const textArea = document.querySelector('textarea');
+  const typeText = document.querySelector('[type=text]');
+  const typeTel = document.querySelector('[type=tel]');
+  const typeEmail = document.querySelector('[type=email]');
+  const erroNome = document.querySelector('#erroNome');
+  const erroTel = document.querySelector('#erroTel');
+  const erroEmail = document.querySelector('#erroEmail');
+  const erroMensagem = document.querySelector('#erroMensagem');
   
   function infoCurta() {
-    document.querySelectorAll('input').forEach((item) => {
+
+    input.forEach((item) => {  
+      const elementoPai = item.parentNode;
+      const mensagemErro = elementoPai.querySelector('span')
+
       if (item.value.length < 3) {
-        alert("Campo têm poucos caracteres!")
         item.style.border = '5px solid red';
         item.style.backgroundColor = '#FFC0B5';
+        mensagemErro.innerHTML = 'O campo possui poucos caracteres!'
+      } else {
+        item.style.border = 'none';
+        item.style.backgroundColor = '#FFFFFF';
+        mensagemErro.innerHTML = null;
       }
     })
 
-    if (document.querySelector('textarea').value == "") {
-      alert("Campo de mensagem têm poucos caracteres!")
-      item.style.border = '5px solid red';
-      item.style.backgroundColor = '#FFC0B5';
+    if (textArea.value == "") {
+      textArea.style.border = '5px solid red';
+      textArea.style.backgroundColor = '#FFC0B5';
+      erroMensagem.innerHTML = 'O campo mensagem possui poucos caracteres!';
+    } else {
+      textArea.style.border = 'none';
+      textArea.style.backgroundColor = '#FFFFFF';
+      erroMensagem.innerHTML = null;
     }
   }
 
   function validaNome() {
-    if (!isNaN(document.querySelector('[type=text]').value)) {
-      alert("Campo nome não aceita números")
-      document.querySelector('[type=text]').style.border = '5px solid red';
-      document.querySelector('[type=text]').style.backgroundColor = '#FFC0B5';
+    if (typeText.value && !isNaN(typeText.value)) {
+      typeText.style.border = '5px solid red';
+      typeText.style.backgroundColor = '#FFC0B5';
+      erroNome.innerHTML = 'Campo nome não aceita números!';
+    } else if (typeText.value.length > 3) {
+      typeText.style.border = 'none';
+      typeText.style.backgroundColor = '#FFFFFF';
+      erroNome.innerHTML = null;
     }
   }
 
   function validaTel() {
-    if (isNaN(document.querySelector('[type=tel]').value) || document.querySelector('[type=tel]').value.length < 8) {
-      alert("Digite um telefone válido")
-      document.querySelector('[type=tel]').style.border = '5px solid red';
-      document.querySelector('[type=tel]').style.backgroundColor = '#FFC0B5';
+    if (typeTel.value && (isNaN(typeTel.value) || typeTel.value.length < 8)) {
+      typeTel.style.border = '5px solid red';
+      typeTel.style.backgroundColor = '#FFC0B5';
+      erroTel.innerHTML = 'Digite um telefone válido!';
+    } else if (typeTel.value.length > 3) {
+      typeTel.style.border = 'none';
+      typeTel.style.backgroundColor = '#FFFFFF';
+      erroTel.innerHTML = null;
     }
   }
 
   function validaEmail() {
-    if (!document.querySelector('[type=email]').value.includes("@") || !document.querySelector('[type=email]').value.endsWith('.com')) {
-      alert("Digite um e-mail válido")
-      document.querySelector('[type=email]').style.border = '5px solid red';
-      document.querySelector('[type=email]').style.backgroundColor = '#FFC0B5';
+    if (!typeEmail.value.includes("@") || !typeEmail.value.endsWith('.com')) {
+      typeEmail.style.border = '5px solid red';
+      typeEmail.style.backgroundColor = '#FFC0B5';
+      erroEmail.innerHTML = 'Digite um e-mail válido!';
+    } else if (typeEmail.value.length > 3) {
+      typeEmail.style.border = 'none';
+      typeEmail.style.backgroundColor = '#FFFFFF';
+      erroEmail.innerHTML = null;
     }
   }
-  
+
   infoCurta();
   validaNome();
   validaTel();

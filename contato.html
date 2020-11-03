@@ -37,7 +37,7 @@
                 <li><a style="background-color: #564D9E"href="sobre.html">Sobre</a></li> <!--Inline para passar no validador Wave-->
                 <li><a style="background-color: #564D9E"href="contato.html">Contato</a></li>
                 <li><a style="background-color: #564D9E"href="cases.html">Cases</a></li>
-            </ul>
+            </ul>\
             <div class="hamburguer"><i class="fas fa-bars"></i></div>
         </nav>
     </header>
@@ -48,24 +48,32 @@
             <!--<form data-aos="zoom-in" data-aos-duration="5000" id="formulario" method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe.php" class="aos-init aos-animate">-->
             <p>
                 <label>
-                    Nome<br> <input type="text" required placeholder="Digite seu nome" name="nome" id="nome" size="35"
+                    Nome<br>
+                    <span id="erroNome"></span>
+                    <input type="text" required placeholder="Digite seu nome" name="nome" id="nome" size="35"
                         maxlength="30" autofocus>
                 </label>
             </p>
             <p>
                 <label>
-                    Telefone<br><input type="tel" required placeholder="Digite seu telefone" name="tel" id="telefone">
+                    Telefone<br>
+                    <span id="erroTel"></span>
+                    <input type="tel" required placeholder="Digite seu telefone" name="tel" id="telefone">
                 </label>
             </p>
             <p>
                 <label>
-                    E-mail<br><input type="email" required placeholder="Digite seu e-mail" name="email" id="email"
+                    E-mail<br>
+                    <span id="erroEmail"></span>
+                    <input type="email" required placeholder="Digite seu e-mail" name="email" id="email"
                         size="35">
                 </label>
             </p>
             <p>
                 <label>
-                Mensagem<br> <textarea name="mensagem" required placeholder="Digite aqui sua mensagem" id="mensagem" rows="5" cols="50"></textarea>
+                Mensagem<br>
+                <span id="erroMensagem"></span>
+                <textarea name="mensagem" required placeholder="Digite aqui sua mensagem" id="mensagem" rows="5" cols="50"></textarea>
                 </label>
             </p>
             <div id="enviarform" onclick="validacao()">Enviar</div>

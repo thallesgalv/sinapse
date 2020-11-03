@@ -220,6 +220,11 @@ body > main > form > p > label {
   }
 }
 
+body > main > form > p > label > span {
+  display: block;
+  color: #FFC0B5;
+}
+
 body > main > form > p > label > input,
 body > main > form > p > label textarea {
   width: 64%;
