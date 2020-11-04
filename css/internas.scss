@@ -398,6 +398,43 @@ body {
               animation-delay: .80s;
           }
       }
+
+      >table {
+        border-collapse: collapse;
+        font-size: 1.3rem; 
+        margin: 60px auto;
+
+        @media (max-width: 767px) {
+            font-size: 1rem; 
+        }
+
+        td, th {
+            border-color: #564D9E;
+            border-style: solid;
+            border-width: 2px;
+            padding: 8px;
+            text-align: center;
+
+            @media (max-width: 767px) {
+                padding: 5px;
+            }
+        }
+
+        th {
+            background-color: #564D9E;
+            color: #fff;
+        }
+
+        .row-alt {
+            background-color: #e6e6e6;
+        }
+
+        >caption {
+            margin: 15px 0;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+      }
   }
 
   >.main-onepage {
