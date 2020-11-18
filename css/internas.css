@@ -95,6 +95,10 @@ body > header > .alt-logo > a > img {
   width: 50%;
 }
 
+body > header .button-darkmode {
+  top: 250px;
+}
+
 body > main {
   padding-top: 250px;
   padding-bottom: 100px;

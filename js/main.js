@@ -42,4 +42,21 @@ function toggleMenu() {
     document.querySelector('body').classList.toggle('menu-block-scroll');
 }
 
-document.querySelector('.hamburguer').addEventListener ('click', toggleMenu)
+document.querySelector('.hamburguer').addEventListener('click', toggleMenu)
+
+
+function darkmode() {
+    document.querySelector('.button-darkmode').classList.toggle('ativo')
+    document.body.classList.toggle('dark')
+
+
+    if (document.body.classList.contains('dark')) {
+        document.querySelector('.logo-padrao').setAttribute('src','./img/logobranco.png')
+    }
+    else {
+        document.querySelector('.logo-padrao').setAttribute('src','./img/logo.png')
+    }
+}
+
+document.querySelector('.button-darkmode').addEventListener('click', darkmode)
+
