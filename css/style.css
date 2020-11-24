@@ -326,6 +326,14 @@ body > header .button-darkmode {
   right: 0;
 }
 
+@media (max-width: 767px) {
+  body > header .button-darkmode {
+    left: 5px;
+    right: unset;
+    top: 2%;
+  }
+}
+
 body > header .button-darkmode > .fa-sun {
   color: #000;
 }
@@ -563,13 +571,15 @@ body > footer {
   }
 }
 
-body > footer > p, body > footer a {
+body > footer > p,
+body > footer a {
   color: #fff;
   font-size: 1.5rem;
 }
 
 @media (max-width: 767px) {
-  body > footer > p, body > footer a {
+  body > footer > p,
+  body > footer a {
     font-size: 1rem;
     text-align: center;
   }
