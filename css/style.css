@@ -322,6 +322,8 @@ body > header .button-darkmode {
   margin-right: 30px;
   margin-left: auto;
   z-index: 2;
+  position: fixed;
+  right: 0;
 }
 
 body > header .button-darkmode > .fa-sun {
