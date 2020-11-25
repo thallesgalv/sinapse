@@ -1,0 +1,544 @@
+@media (max-width: 767px) {
+  body .pontos {
+    display: none;
+  }
+}
+
+body > .container-bg {
+  background-image: url("../img/lateral-internas.svg");
+  background-position-x: -46%;
+  z-index: 2;
+}
+
+@media (max-width: 1400px) {
+  body > .container-bg {
+    background-size: 115%;
+  }
+}
+
+@media (max-width: 1200px) {
+  body > .container-bg {
+    background-size: 153%;
+    background-position-x: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  body > .container-bg {
+    display: none;
+  }
+}
+
+body > .container-bg > .img-servicos {
+  width: 45%;
+  right: 5%;
+  bottom: 20%;
+}
+
+body > .container-bg > .img-sobre {
+  width: 35%;
+  right: 16%;
+  bottom: 7%;
+}
+
+body > .container-bg > .img-contato {
+  width: 33%;
+  right: 16%;
+  bottom: 15%;
+}
+
+body > header::before {
+  content: '';
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+}
+
+@media (max-width: 1500px) {
+  body > header::before {
+    height: 160px;
+  }
+}
+
+@media (max-width: 767px) {
+  body > header::before {
+    display: none;
+  }
+}
+
+body > header > nav {
+  z-index: 2;
+  position: fixed;
+}
+
+@media (max-width: 767px) {
+  body > header > nav {
+    background-color: #564D9E;
+    width: 100%;
+    height: 40px;
+  }
+}
+
+body > header > nav > a {
+  z-index: 2;
+  position: relative;
+}
+
+body > header > nav > a > img {
+  -webkit-transition: width 0.7s ease-in-out;
+  transition: width 0.7s ease-in-out;
+}
+
+body > header > .alt-logo > a > img {
+  width: 50%;
+}
+
+body > header .button-darkmode {
+  top: 250px;
+}
+
+@media (max-width: 767px) {
+  body > header .button-darkmode {
+    top: unset;
+  }
+}
+
+body > main {
+  padding-top: 250px;
+  padding-bottom: 100px;
+  width: 45%;
+}
+
+@media (max-width: 1500px) {
+  body > main {
+    padding-top: 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  body > main {
+    width: 80%;
+    padding-top: 60px;
+  }
+}
+
+body > main > p {
+  padding: 0;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  body > main > p {
+    color: #564D9E;
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  body > main > h1 {
+    color: #564D9E;
+    text-align: left;
+  }
+}
+
+body > main .alinha {
+  text-align: center;
+  padding: 4% 0;
+}
+
+body > main .alinha > img {
+  max-width: 100%;
+}
+
+body > main > a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4%;
+  z-index: 2;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  body > main > a {
+    position: unset;
+  }
+}
+
+body > main > a > .botao {
+  width: 50%;
+  border-radius: 36px;
+  background-color: #564D9E;
+  color: #fff;
+  border: none;
+  font-size: 1.375rem;
+  font-weight: 600;
+  padding: 4%;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  body > main > a > .botao {
+    width: 80%;
+    margin-top: 48px;
+  }
+}
+
+body > main > form {
+  background-color: #564D9E;
+  padding: 4%;
+  border-radius: 30px;
+  width: 60%;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  body > main > form {
+    position: unset;
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 100px;
+  }
+}
+
+body > main > form > p {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 767px) {
+  body > main > form > p {
+    text-align: center;
+  }
+}
+
+body > main > form > p > label {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  body > main > form > p > label {
+    padding-bottom: 40px;
+  }
+}
+
+body > main > form > p > label > input,
+body > main > form > p > label textarea {
+  width: 64%;
+  border-radius: 10px;
+  height: 40px;
+  border: none;
+  padding-left: 2%;
+}
+
+@media (max-width: 767px) {
+  body > main > form > p > label > input,
+  body > main > form > p > label textarea {
+    width: 90%;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+}
+
+body > main > form > p > label > input::-webkit-input-placeholder,
+body > main > form > p > label textarea::-webkit-input-placeholder {
+  font-size: 1rem;
+  padding-left: 2%;
+  margin: auto;
+}
+
+body > main > form > p > label > input:-ms-input-placeholder,
+body > main > form > p > label textarea:-ms-input-placeholder {
+  font-size: 1rem;
+  padding-left: 2%;
+  margin: auto;
+}
+
+body > main > form > p > label > input::-ms-input-placeholder,
+body > main > form > p > label textarea::-ms-input-placeholder {
+  font-size: 1rem;
+  padding-left: 2%;
+  margin: auto;
+}
+
+body > main > form > p > label > input::placeholder,
+body > main > form > p > label textarea::placeholder {
+  font-size: 1rem;
+  padding-left: 2%;
+  margin: auto;
+}
+
+body > main > form > p > label > input:focus,
+body > main > form > p > label textarea:focus {
+  outline: none;
+  padding-left: 2%;
+}
+
+body > main > form > p > label > input.erro,
+body > main > form > p > label textarea.erro {
+  border: 5px solid red;
+  background-color: #FFC0B5;
+}
+
+body > main > form > p > label > textarea {
+  width: 100%;
+  height: 68px;
+  resize: none;
+}
+
+@media (max-width: 767px) {
+  body > main > form > p > label > textarea {
+    width: 90%;
+    height: 140px;
+  }
+}
+
+body > main > form > p > label > textarea::-webkit-input-placeholder {
+  padding-top: 10px;
+}
+
+body > main > form > p > label > textarea:-ms-input-placeholder {
+  padding-top: 10px;
+}
+
+body > main > form > p > label > textarea::-ms-input-placeholder {
+  padding-top: 10px;
+}
+
+body > main > form > p > label > textarea::placeholder {
+  padding-top: 10px;
+}
+
+body > main > form > p > label > span {
+  display: block;
+  color: #FFC0B5;
+  font-size: .9rem;
+  padding-top: 8px;
+}
+
+body > main > form #enviarform {
+  background-color: #fff;
+  color: #564D9E;
+  height: 50px;
+  width: 40%;
+  border-radius: 30px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+body > main > form .sucesso {
+  display: none;
+  color: #9fc693;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+
+body > main > form .sucesso.ativo {
+  display: block;
+}
+
+body > main > .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 2%;
+  z-index: 2;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  body > main > .container {
+    position: unset;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 100px;
+  }
+}
+
+body > main > .container > .fakelogo {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  height: 150px;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 4px 8px;
+  margin-left: 0;
+  -webkit-animation: zoom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: zoom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  cursor: pointer;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  body > main > .container > .fakelogo {
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
+  }
+}
+
+body > main > .container > .fakelogo:nth-child(odd) {
+  background-color: rgba(86, 77, 158, 0.9);
+}
+
+body > main > .container > .fakelogo:nth-child(even) {
+  background-color: rgba(86, 77, 158, 0.5);
+}
+
+body > main > .container > .fkl1 {
+  background-image: url("../img/fakelogo1.png");
+  -webkit-animation-delay: .10s;
+          animation-delay: .10s;
+}
+
+body > main > .container > .fkl2 {
+  background-image: url("../img/fakelogo2.png");
+  -webkit-animation-delay: .20s;
+          animation-delay: .20s;
+}
+
+body > main > .container > .fkl3 {
+  background-image: url("../img/fakelogo3.png");
+  -webkit-animation-delay: .30s;
+          animation-delay: .30s;
+}
+
+body > main > .container > .fkl4 {
+  background-image: url("../img/fakelogo4.png");
+  -webkit-animation-delay: .40s;
+          animation-delay: .40s;
+}
+
+body > main > .container > .fkl5 {
+  background-image: url("../img/fakelogo5.png");
+  -webkit-animation-delay: .50s;
+          animation-delay: .50s;
+}
+
+body > main > .container > .fkl6 {
+  background-image: url("../img/fakelogo6.png");
+  -webkit-animation-delay: .60s;
+          animation-delay: .60s;
+}
+
+body > main > .container > .fkl7 {
+  background-image: url("../img/fakelogo7.png");
+  -webkit-animation-delay: .70s;
+          animation-delay: .70s;
+}
+
+body > main > .container > .fkl8 {
+  background-image: url("../img/fakelogo8.png");
+  -webkit-animation-delay: .80s;
+          animation-delay: .80s;
+}
+
+body > main > table {
+  border-collapse: collapse;
+  font-size: 1.3rem;
+  margin: 60px auto;
+}
+
+@media (max-width: 767px) {
+  body > main > table {
+    font-size: 1rem;
+  }
+}
+
+body > main > table td,
+body > main > table th {
+  border-color: #564D9E;
+  border-style: solid;
+  border-width: 2px;
+  padding: 8px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  body > main > table td,
+  body > main > table th {
+    padding: 5px;
+  }
+}
+
+body > main > table th {
+  background-color: #564D9E;
+  color: #fff;
+}
+
+body > main > table .row-alt {
+  background-color: #e6e6e6;
+}
+
+body > main > table > caption {
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+body > .main-onepage {
+  padding-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  body > footer {
+    background-color: #564D9E;
+  }
+}
+/*# sourceMappingURL=internas.min.css.map */
