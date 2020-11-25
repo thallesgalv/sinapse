@@ -194,7 +194,7 @@ body {
         }
 
         >.nav-ativo {
-            background-color: rgb(70, 62, 124);
+            background-color: #564D9E;
 
             >.logo-branco {
                 display: none;
@@ -203,7 +203,7 @@ body {
             >ul {
                 display: block;
                 height: 100vh;
-                background-color: rgb(70, 62, 124);
+                background-color: #564D9E;
                 padding-top: 60px;
 
                 >li {
@@ -486,6 +486,12 @@ body {
                 text-decoration: underline;
 
             }
+        }
+    }
+
+    main {
+        h1,p {
+            color: #fff;
         }
     }
 

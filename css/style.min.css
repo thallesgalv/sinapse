@@ -279,7 +279,7 @@ body > header > nav > .hamburguer {
 }
 
 body > header > .nav-ativo {
-  background-color: #463e7c;
+  background-color: #564D9E;
 }
 
 body > header > .nav-ativo > .logo-branco {
@@ -289,7 +289,7 @@ body > header > .nav-ativo > .logo-branco {
 body > header > .nav-ativo > ul {
   display: block;
   height: 100vh;
-  background-color: #463e7c;
+  background-color: #564D9E;
   padding-top: 60px;
 }
 
@@ -629,6 +629,10 @@ body > footer > small {
 .dark header nav a {
   color: #fff;
   text-decoration: underline;
+}
+
+.dark main h1, .dark main p {
+  color: #fff;
 }
 
 .dark .row-alt {
