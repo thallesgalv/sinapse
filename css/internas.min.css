@@ -101,7 +101,7 @@ body > header .button-darkmode {
 
 @media (max-width: 767px) {
   body > header .button-darkmode {
-    top: unset;
+    top: 10px;
   }
 }
 
